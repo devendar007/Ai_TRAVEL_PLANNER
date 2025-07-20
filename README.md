@@ -29,10 +29,10 @@ Curious about the magic behind your personalized trips? Here's a simple breakdow
 
 ```mermaid
 graph TD
-    A[User (Web Browser)] --> B[React Frontend]
-    B -- Send Trip Details --> C[Express Backend]
-    C -- Craft Prompt & Send --> D[Gemini AI API]
-    D -- Return Itinerary --> C
-    C -- Save Itinerary & Respond --> E[MongoDB]
-    C -- Send Itinerary --> B
-    B -- Display Itinerary --> A
+A[User (Web Browser)] -- Send Trip Details --> B[React Frontend]
+B -- Send Trip Details --> C[Express Backend]
+C -- Craft Prompt & Send --> D[Gemini AI API]
+D -- Return Itinerary --> C
+C -- Save Itinerary & Respond --> E[MongoDB]
+C -- Send Itinerary --> B
+B -- Display Itinerary --> A
