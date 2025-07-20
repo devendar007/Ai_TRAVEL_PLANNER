@@ -1,16 +1,19 @@
-const express = require('express'); 
+const dotenv = require('dotenv');
+dotenv.config(); // Keep this one
 
+const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const dotenv = require('dotenv');
+
 const authRoutes = require('./routes/auth');
 const tripRoutes = require('./routes/trips');
 
-dotenv.config();
+// Remove this duplicate call:
+// dotenv.config();
 
 const app = express();
 const allowedOrigins = [
-    'http://localhost:3000', // Your local frontend dev server
+    'http://localhost:5173', // Your local frontend dev server
     'https://ai-travel-planner-cazi.onrender.com' // YOUR DEPLOYED FRONTEND URL
 ];
 
