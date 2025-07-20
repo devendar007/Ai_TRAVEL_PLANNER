@@ -41,7 +41,7 @@ graph TD
   C --> E
   C --> B
   B --> A
-  ```
+```
 
 ### What Each Part Does
 
