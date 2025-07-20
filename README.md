@@ -28,19 +28,19 @@ The AI Trip Planner is built using a modern web stack. Here’s how all the part
 
 ```mermaid
 graph TD
-  A[User (Web Browser)]
-  B[React Frontend]
-  C[Express Backend]
-  D[Gemini AI API]
-  E[MongoDB]
+A[User (Web Browser)]
+B[React Frontend]
+C[Express Backend]
+D[Gemini AI API]
+E[MongoDB]
 
-  A --> B
-  B --> C
-  C --> D
-  D --> C
-  C --> E
-  C --> B
-  B --> A
+A --> B
+B --> C
+C --> D
+D --> C
+C --> E
+C --> B
+B --> A
 ```
 
 ### What Each Part Does
